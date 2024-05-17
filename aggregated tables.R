@@ -11,12 +11,13 @@ mutate_col_names <- data_set %>%
     sleep_amount = How_much_time_are_you_sleeping_everyday,
     gpa = Cgpa,
     reason = Why_did_you_chosen_your_department_work_area,
-    attitude = Are_you_happy_with_your_department_work_area
+    attitude = Are_you_happy_with_your_department_work_area,
+    diet = Are_you_getting_good_food_diet_everyday
   )
 
 # Group by major and reason for the choosing of the major
 agregated_data_frame <- mutate_col_names %>%
-  group_by(major, reason, attitude, sleep_amount) %>%
+  group_by(major, reason, attitude, sleep_amount, diet) %>%
   summarize(
     average_gpa = mean(gpa, na.rm = TRUE),
     maximum_gpa = max(gpa, na.rm = TRUE),
