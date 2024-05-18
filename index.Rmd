@@ -10,7 +10,7 @@ Give your project a concise, interesting title that summarizes the entirety of y
 ### Authors
 - Abdulbasit Abdalla (tooly206@uw.edu)
 - Ekram Melash (Eam52@uw.edu)
-- Allison Miles (amilles1@uw.edu)
+- Alison Miles (amilles1@uw.edu)
 - Angela Sun (sinuos2@uw.edu)
 ### Date
 
