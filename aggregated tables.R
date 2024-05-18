@@ -3,6 +3,7 @@ library("tidyverse")
 
 data_set <- read.csv("~/Documents/exploratory-analysis-eam52/Survey on Student Mental Health1.csv")
 
+# mutating the column names so the names are shorter and logical instead of long
 mutate_col_names <- data_set %>%
   mutate(
     age = Age,
@@ -15,7 +16,7 @@ mutate_col_names <- data_set %>%
     diet = Are_you_getting_good_food_diet_everyday
   )
 
-# Group by major and reason for the choosing of the major
+# Grouping the datatset based on the needed information to answer our research questions!
 agregated_data_frame <- mutate_col_names %>%
   group_by(major, reason, attitude, sleep_amount, diet) %>%
   summarize(
@@ -24,5 +25,5 @@ agregated_data_frame <- mutate_col_names %>%
     median_gpa = median(gpa, na.rm = TRUE),
     total_students = n()
   )
-
+# this prints the table in a way that shows the whole table (n = nrow(df))
 print(agregated_data_frame, n = nrow(agregated_data_frame))
