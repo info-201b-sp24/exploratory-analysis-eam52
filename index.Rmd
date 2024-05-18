@@ -3,45 +3,97 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
+## Impacts of College Life on Students Mental Health
 
 Give your project a concise, interesting title that summarizes the entirety of your project
 
 ### Authors
-
-Names of your team members
-
+- Abdulbasit Abdalla (tooly206@uw.edu)
+- Ekram Melash (Eam52@uw.edu)
+- Allison Miles (amilles1@uw.edu)
+- Angela Sun (sinuos2@uw.edu)
 ### Date
 
-Winter 2022
+Spring 2024
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main question is how dietary habits, academic major, and pandemic impacts
+correlate with mental health issues among college students. This inquiry is important because
+identifying these correlations can enable tailored mental health interventions
+within academic settings. To explore these relationships, we will develop
+an interactive web application that visualizes data through specific analyses,
+including stacked bar charts and box plots, highlighting trends and patterns in student mental health.
 
 ### Keywords
+Keywords: Mental Health; College Students; Data Visualization; Academic Stress; Pandemic Effects
+### Introduction
+Our project focuses on exploring the intricate relationships between various factors—such as academic major,
+dietary habits, and the impacts of the COVID-19 pandemic—and mental health among college students.
+We aim to leverage an interactive web application to analyze and visualize data gathered from
+health surveys and academic records. This approach allows us to identify and understand patterns and
+trends that may influence students' mental well-being, providing a foundation for targeted
+mental health strategies and interventions within academic communities.
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+**Research Questions:**
 
-### Introduction  
+1. **How do dietary habits correlate with mental health conditions among college students?**
+   - This question investigates whether the quality of diet can influence mental health.
+   - Understanding this relationship could guide the development of nutritional support programs as
+   - part of comprehensive mental health strategies in colleges.
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+2. **Are certain academic majors more likely to be associated with higher levels of stress**
+   **and mental health issues among students?**
+   - By identifying the majors that correlate with higher stress, institutions can tailor specific
+   - counseling and support services to alleviate academic pressure and enhance student well-being.
 
-### Related Work  
+3. **What has been the impact of the COVID-19 pandemic on the mental and academic well-being of college students?**
+   - Examining the specific mental effects of the pandemic is crucial as it offers insights into how
+   - such global crises can affect student populations, guiding future emergency response strategies in educational settings.
+
+4. **Does the geographic location of students play a role in their mental health outcomes?**
+   - This question explores whether external environmental and cultural factors associated with
+   - different geographic locations affect mental health, which could be vital for universities with diverse student bodies.
+
+Our questions are motivated by the need to address the rising concerns over mental health issues
+in college environments. They are important as they help to pinpoint specific factors that can be
+addressed by university policies and support systems, ultimately aiming to improve the educational
+and personal outcomes for students.
+### Related Work
 
 Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
 
 ### The Dataset
+**Where did you find the data?**
+The data for our study was sourced from Kaggle, a platform for data science competitions and datasets.
+You can access the dataset via this link: [Kaggle](https://www.kaggle.com/datasets/akilesh23/student-mental-health-issues/data)
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+**Who collected the data?**
+The dataset was compiled by AKILESH S, who gathered the data to analyze mental health issues among college students.
+
+**How was the data collected or generated?**
+The data was generated through survey responses provided by the students. These responses were self-reported, based on personal feelings or perceptions related to various aspects of mental health.
+
+**Why was the data collected?**
+The primary purpose of collecting the data was to analyze the prevalence and distribution of mental health issues among students, providing insights into how these issues vary across different demographics and conditions.
+
+**How many observations (rows) are in your data?**
+The dataset contains 468 observations (rows).
+
+**How many features (columns) are in the data?**
+There are 18 features (columns) in the dataset.
+
+**What, if any, ethical questions or questions of power do you need to consider when working with this data?**
+When working with this data, ethical considerations include ensuring the anonymity and confidentiality of the respondents. It's crucial to handle the data in a way that respects the privacy of the individuals involved and avoids any misuse of sensitive information about their mental health.
+
+**What are possible limitations or problems with this data?   (at least 200 words)**
+The dataset presents several limitations:
+
+Self-reported Data: The reliance on self-reported responses may lead to inaccuracies due to subjective interpretations of personal mental health states.
+Temporal and Departmental Bias: The short duration of data collection and concentration of respondents from specific departments (e.g., CSE) may not accurately reflect broader trends and may skew results towards particular demographics.
+Survey Design Flaws: The design of the survey, which in some cases restricted responses to a single choice where multiple responses might be applicable, could result in an incomplete representation of the students' mental health conditions and behaviors.
+Gender Distribution: The uneven gender distribution with a higher percentage of male respondents might introduce a bias, potentially impacting the findings and their generalizability to the entire student population.
+These factors necessitate a cautious approach to interpreting the findings, considering the potential biases and limitations inherent in the dataset. Further research, perhaps with a more robust and comprehensive data collection method, would be beneficial to deepen the understanding of mental health dynamics among students.
 
 ### Implications
 
