@@ -103,8 +103,7 @@ Assuming you answer your research questions, briefly describe the expected or po
 What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
 
 ### Summary Information
-
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+This summary showcases the 5 data points that were used to showcase this dataset and its strengths related to student's mental health. To begin, majority of people chose the job or department they are currently working in because of interest. Furthermore, the department that most people choose is mechanics. Most students report that they get good sleep at night, 10 hours being generally the amount students get. And lastly, what stresses students out the most is thinking about the future.
 
 ### Table
 
