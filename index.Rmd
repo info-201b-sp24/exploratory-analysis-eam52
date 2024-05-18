@@ -145,6 +145,7 @@ agregated_data_frame <- mutate_col_names %>%
 ```{r display-table, echo=FALSE}
 print(agregated_data_frame, n = nrow(agregated_data_frame))
 ```
+The table created in the provided R script aggregates and analyzes data based on variables such as academic major, reasons for choosing that major, attitude towards the major, sleep amount, and diet, calculating important statistics like average, maximum, and median GPA, along with the total number of students per group. This aggregation is crucial as it provides insights into how different factors influence students' academic performance and mental well-being, allowing for easy comparison across groups. Such structured data is invaluable for universities in making informed decisions regarding curriculum adjustments, student support services, and resource allocation. Additionally, it highlights patterns and potential areas for further research, ultimately aiming to improve educational outcomes and enhance student satisfaction by addressing specific needs identified through the analysis.
 ### Chart 1
 
 Include a chart
