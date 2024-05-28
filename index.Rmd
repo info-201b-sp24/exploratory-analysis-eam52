@@ -1,5 +1,3 @@
-library(knitr)
-library(kableExtra)
 ---
 title: "Exploratory Analysis"
 output: html_document
@@ -7,7 +5,6 @@ output: html_document
 
 ## Impacts of College Life on Students Mental Health
 
-Give your project a concise, interesting title that summarizes the entirety of your project
 
 ### Authors
 - Abdulbasit Abdalla (tooly206@uw.edu)
@@ -111,6 +108,12 @@ This summary showcases the 5 data points that were used to showcase this dataset
 ### Table
 ## Data Manipulation
 
+```{r}
+library(dplyr)
+library(tidyverse)
+data_set <- read.csv("Survey on Student Mental Health1.csv")
+```
+
 ```{r manipulate-data}
 mutate_col_names <- data_set %>%
   mutate(
@@ -146,25 +149,28 @@ agregated_data_frame <- mutate_col_names %>%
 print(agregated_data_frame, n = nrow(agregated_data_frame))
 ```
 The table created in the provided R script aggregates and analyzes data based on variables such as academic major, reasons for choosing that major, attitude towards the major, sleep amount, and diet, calculating important statistics like average, maximum, and median GPA, along with the total number of students per group. This aggregation is crucial as it provides insights into how different factors influence students' academic performance and mental well-being, allowing for easy comparison across groups. Such structured data is invaluable for universities in making informed decisions regarding curriculum adjustments, student support services, and resource allocation. Additionally, it highlights patterns and potential areas for further research, ultimately aiming to improve educational outcomes and enhance student satisfaction by addressing specific needs identified through the analysis.
+
 ### Chart 1
-
-Include a chart
-
+The purpose of including Chart 1: 
 Chart 1 is designed to answer our first research question: "Is there a relationship between mental health issues among college students and their dietary habits?" We intend to include this bar chart to visualize data about whether students had a good diet or notand their corresponding mental health conditions. Our initial hypothesis was that students with poor dietary habits were more likely to suffer from mental health issues, or that mental health problems led to poor dietary habits. Chart 1 aims to test this hypothesis.
 Notable observations and insights from Chart 1: Chart 1 illustrates the proportion of students with good and poor diets for each mental health condition. Through our observation, it is apparent that among students who felt depressed and stressed, a higher proportion had poor dietary habits, suggesting that poor eating habits led to more potential mental health issues such as depression, or the mental health problems diminish students' willing of good diet, which is also in line with our guess. However, it is also notable that even for happy students, poor eating habits still predominate, which may weaken our previous conclusion.
-``````{r, echo = FALSE, code = readLines("Chart1.R")}
+```{r, echo = FALSE, code = readLines("Chart1.R")}
 ```
 
 ### Chart 2
 
-``````{r, echo = FALSE, code = readLines("Chart2.R")}
+```{r, echo = FALSE, code = readLines("Chart2.R")}
 ```
-The purpose of including Chart 2: Chart 2 is designed to answer our second research question: "Do students who are studying a certain major report higher stress issues/levels?" We intend to include this bar chart to visualize the distributions of causes of stress and the distributions of departments that students enrolled in for each kind of source. We anticipated that students, regardless of their major, experience significant stress related to academic life. We were also curious to see which major reported the highest overall stress levels since almost all majors seemed to be challenging STEM majors.
+
+The purpose of including Chart 2:  
+Chart 2 is designed to answer our second research question: "Do students who are studying a certain major report higher stress issues/levels?" We intend to include this bar chart to visualize the distributions of causes of stress and the distributions of departments that students enrolled in for each kind of source. We anticipated that students, regardless of their major, experience significant stress related to academic life. We were also curious to see which major reported the highest overall stress levels since almost all majors seemed to be challenging STEM majors.
 Notable observations and insights from Chart 2: Chart 2 shows that students of all majors reported high levels of stress related to exams compared with other sources of stress, which aligns with our expectations. Besides, under any circumstance, students majoring in CSE felt more pressure than those in any other major. Notably, we were surprised that CSE students were the only group reporting heightened stress related to love. Therefore, it appears that CSE students experience higher stress levels compared to students in other majors.
+
 ### Chart 3
 
-``````{r, echo = FALSE, code = readLines("Chart3.R")}
+```{r, echo = FALSE, code = readLines("Chart3.R")}
 ```
 
-The purpose of including Chart 3: Chart 3 is designed to answer our third research question: "How did the pandemic affect the students' well-being?" We include this box plot to display and compare the positive and negative pandemic's mental effects on students' overall well-being. Generally, we intended to see if COVID-19's negative impacts on students' mental health caused worse academic performance and more worries through this visualization.
+The purpose of including Chart 3:  
+Chart 3 is designed to answer our third research question: "How did the pandemic affect the students' well-being?" We include this box plot to display and compare the positive and negative pandemic's mental effects on students' overall well-being. Generally, we intended to see if COVID-19's negative impacts on students' mental health caused worse academic performance and more worries through this visualization.
 Notable observations and insights from Chart 3: We observed Chart 3 and found that there are apparent variations in grades occurred in both students with positive and negative mental impacts of the pandemic, and the median GPA was always higher in students suffering negative mental impacts from COVID-19 except students worrying about future. Besides, among all groups of students, students with positive mental impacts who worried about health had the least variation in grades if ignoring four outliers, which may imply that positive mental effects caused a specific group of students to worry about health, and grades around 8.0 were a shared feature.
